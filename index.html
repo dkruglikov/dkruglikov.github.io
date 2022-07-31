@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Quiz Night</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    </head>
-    <body>
-        <h1>Standings</h1>
-		<div id="standings"></div>
-		<script src="ua.dp.coldsun.quiznight.Standings/ua.dp.coldsun.quiznight.Standings.nocache.js"></script>
-    </body>
-</html>
+<head>
+    <style>
+        @keyframes spinMeRound {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        img {
+            position: absolute;
+        }
+        .mask {
+            animation: spinMeRound 3s linear infinite;
+            width: 999px;
+            height: 1080px;
+        }
+        .center {
+            top: 530px;
+            left: 490px;
+        }
+    </style>
+    <title>Blindfold</title>
+</head>
+<body style="background-color: black">
+    <div>
+        <img alt="Mask" class="mask" src="mask.jpg"/>
+        <img alt="Center" class="center" src="center.png"/>
+        <img alt="B" style="top: 430px; left: 320px" src="b.png"/>
+        <img alt="A" style="top: 430px; left: 480px" src="a.png"/>
+        <img alt="B" style="top: 430px; left: 640px" src="b.png"/>
+    </div>
+</body>
